@@ -1,0 +1,8 @@
+from collections import Counter 
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        data = Counter(nums)
+        for d  in data.values():
+            if d > 1:
+                return True
+        return False
